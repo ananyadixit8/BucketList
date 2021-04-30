@@ -1,0 +1,21 @@
+/*Minimal changes on the styling done by using bootstrap*/
+
+/*A class made for setting the background color of the navigation bar*/
+.navbar_background{
+	background-color: rgb(25,121,165);
+}
+
+/*Styling for the main body and the background of the page*/
+body{
+	background-image: url("https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin: auto;
+}
+
+/*A class made for setting the transparency*/
+.opaque{
+	background-color: transparent;
+	border-style: none;
+}

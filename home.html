@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <!-- To add custom fonts from Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,600&display=swap" rel="stylesheet">
+
+        <!-- To connect the Css file -->
+		<link rel="stylesheet" href="home.css">
+
+        <!-- To connect/add Bootstrap which has been used for styling -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+		
+		<title>My Bucketlist</title>
+		<link rel = "icon" href = "https://www.pngrepo.com/png/20504/180/notebook.png" type = "image/x-icon">
+	</head>
+	<body>
+
+        <!-- Creating a Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar_background px-3 opaque" >
+			  <div class="container-fluid" >
+				    <a class="navbar-brand" href="#"><i class="bi bi-card-checklist"></i> BUCKETLIST</a>
+
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				      	<span class="navbar-toggler-icon"></span>
+				    </button>
+
+                    <!-- Creating a dropdown menu -->
+				    <div class="dropdown px-3">
+
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+						   <i class="bi bi-person-circle"></i>
+						</a>
+
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						    <li><a class="dropdown-item" href="#">PROFILE</a>
+						    </li>
+						    <li><a class="dropdown-item" href="#">LOGOUT</a>
+						    </li>
+						</ul>
+
+					</div>
+		</nav>
+
+		<br><br>
+
+        <!-- Creating a container where the input from the user will be taken and added to the List -->
+		<div class="container my-3 w-75">
+	        <div class="card-body" style="text-align: center;">
+    			<h1>Add Your Goals Here</h1>
+  			</div>
+	        <div class="card opaque" >
+	            <div class="card-body">
+
+	                <h3 class="card-title" style="text-align: left;">
+	                    <i class="bi bi-card-heading"></i> Add a New Item</h3>
+
+	                <div class="form-group p-2">
+	                    <textarea class="form-control" 
+	                        id="addTxt" rows="3">
+	                    </textarea>
+	                </div>
+
+	                <button class="btn btn-primary mt-2" 
+	                    id="addBtn" style=
+	                    "background-color:green">
+	                    <i class="bi bi-journal-check"></i> Add Item
+	                </button>
+
+	            </div>
+	        </div>
+
+            <!-- To display all the items in the bucketlist -->
+	        <hr class="opaque">
+	        	<h3><i class="bi bi-journal-bookmark"></i> Your List</h3>
+	        <hr >
+	          
+	        <div id="notes" class=
+	            "row container-fluid opaque"> 
+	        </div>
+	    </div>
+		
+
+		<script src="home.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	</body>
+</html>
